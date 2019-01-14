@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Password Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith:400i" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">		
+	<!-- Animaciones -->
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="animated fadeInDown fast">Password Generator</h1>
+
+        <div class="app animated fadeInUp fast">
+            <form action="" class="app" id="app">
+
+                <div class="fila numero-caracteres">
+
+                    <div class="col">
+                        <label for="fila numero-caracteres">Password Length:</label>
+                    </div>
+
+                    <div class="col botones">
+
+                        <div>
+                            <button class="btn" id="btn-menos-uno"> <i class="fas fa-minus"></i> </button>
+                        </div>
+
+                        <div>
+                            <input type="text" id="numero-caracteres" readonly value="12">
+                        </div>
+
+                        <div>
+                            <button class="btn" id="btn-mas-uno"> <i class="fas fa-plus"></i> </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="fila simbolos">
+
+                    <div class="col">
+                        <label for="simbolos">Include Symbols:</label>
+                    </div>
+
+                    <div class="col">
+                        <button class="btn" id="btn-simbolos"><i class="fas fa-check"></i></button>
+                    </div>
+
+                </div>
+
+                <div class="fila numeros">
+
+                        <div class="col">
+                            <label for="numeros">Include Numbers:</label>
+                        </div>
+    
+                        <div class="col">
+                            <button class="btn" id="btn-numeros"><i class="fas fa-check"></i></button>
+                        </div>
+    
+                </div>
+
+                <div class="fila mayusculas">
+
+                        <div class="col">
+                            <label for="mayusculas">Include Uppercase:</label>
+                        </div>
+    
+                        <div class="col">
+                            <button class="btn" id="btn-mayusculas"><i class="fas fa-check"></i></button>
+                        </div>
+    
+                </div>
+
+                <div class="fila generar">
+
+                    <div class="col">
+                        <button class="btn btn-generar" id="btn-generar">Generate!<i class="fas fa-lock"></i></button>
+                    </div>
+
+                    <div class="col">
+                        <input type="text" class="input-password" id="input-password" readonly value="5aR!@r0">
+                    </div>
+
+                </div>
+
+                <div class="fila alerta">
+                        <div class="col">
+                            <div class="alerta-copiado " id="alerta-copiado">
+                                <p><i class="fas fa-copy"></i> Password copied!</p>
+                            </div>
+                        </div>
+                </div>
+
+            </form>
+        </div>
+
+
+		<div class="animated fadeInUp delay-2s ">
+        	<h6>Made by <a href="https://github.com/Gantahat62">Gantahat62</a></h6> 			
+		</div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
